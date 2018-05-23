@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 04</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+<div class="header">
+    <h1>Let's talk</h1>
+    <p>Think you have what it takes? Show us.</p>
+</div>
+<form class="container">
+    <div class="personal-info">
+        <h3>1. Personal information</h3>
+        <div class="info info-col-01">
+            <div class="left">
+                <input type="text" name="name" placeholder="Full name*" autocomplete='name' />
+                <input type="email" name="email" placeholder="Email*" autocomplete='email' />            
+                <input type="tel" name="tel" placeholder="Phone#*" autocomplete='tel' />
+            </div>
+            <div class="right">
+                <input type="email" name="reEmail" placeholder="Re-enter email*" autocomplete='email' />
+            </div>
+        </div>
+        <div class="info info-col-02">
+            <div class="top">
+                <textarea class="input" name="street-address" rows="2" placeholder="Address*" autocomplete='street-address'></textarea>   
+            </div>       
+            <div class="bottom-inline">
+                <input type="text" name="city" placeholder="City*" autocomplete='address-level2' />
+                <input type="text" name="state" placeholder="State" autocomplete='address-level3' />
+                <input type="text" name="country" placeholder="Country/Region*" autocomplete='country-name' />
+                <input type="text" name="postal-code" placeholder="Zip/Postal code" autocomplete='postal-code' />
+            </div>
+        </div>
+        <div class="info info-col-3">
+            <input type="text" placeholder="How did you hear about us" />
+        </div>
+    </div>
+    <div class="skill-location">
+        <h3>2. Skills and location</h3>
+        <p>Which is your primary design discipline?*</p>
+            
+        <div class="info top">
+            <input type="radio" name="design-discipline" id="design-research" /><label for="design-research">Design Research</label>
+            
+            <input type="radio" name="design-discipline" id="visual-design" /><label for="visual-design">Visual Design</label>
+            
+            <input type="radio" name="design-discipline" id="ux-design" /><label for="ux-design">UX Design</label>
+            
+            <input type="radio" name="design-discipline" id="frontend-dev" /><label for="frontend-dev">Frontend Dev</label>
+        </div>
+        <div class="bottom">
+            <div class="info right">
+                <p>Do you have experience with any other disciplines?</p>
+
+                <label for="o1"><input type="checkbox" name="other-discipline" id="o1" /><span class="checkbox"></span>Visual Design</label>
+                <label for="o2"><input type="checkbox" name="other-discipline" id="o2" /><span class="checkbox"></span>UX Design</label>
+                <label for="o3"><input type="checkbox" name="other-discipline" id="o3" /><span class="checkbox"></span>Front-end Development</label>
+            </div>
+            <div class="info left">
+                <p>Where are you interested in working?*</p>
+                <p class="paragraph-blur">You musy be legally authorized to work without visa sponsorship in the location(s) you choose.</p>
+                
+                <label for="o01"><input type="checkbox" name="location" id="o01" /><span class="checkbox"></span>Austin, Texas</label>
+                <label for="o02"><input type="checkbox" name="location" id="o02" /><span class="checkbox"></span>New york, New York</label>
+                <label for="o03"><input type="checkbox" name="location" id="o03" /><span class="checkbox"></span>Toronto, Canada</label>
+                <label for="o04"><input type="checkbox" name="location" id="o04" /><span class="checkbox"></span>Shanghai, Canada</label>
+                <label for="o05"><input type="checkbox" name="location" id="o05" /><span class="checkbox"></span>Dublin, Ireland</label>
+                <label for="o06"><input type="checkbox" name="location" id="o06" /><span class="checkbox"></span>Hursley, United Kingdom</label>
+                <label for="o07"><input type="checkbox" name="location" id="o07" /><span class="checkbox"></span>Boeblingen, Germany</label>
+                <label for="o08"><input type="checkbox" name="location" id="o08" /><span class="checkbox"></span>Somewhere else</label>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio">
+        <h3>3. Portfolio</h3>
+        <p>Prove you're IBM's next great designer by showing us who you are. What you've done. How you work. Tell us your story.</p>
+        <input type="text" placeholder="Portfolio link" />
+        <textarea rows="5" placeholder="Anything else (another link, availability, etc.)?"></textarea>
+        <button>Submit</button>
+    </div>
+</form>
+
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
